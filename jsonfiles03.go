@@ -28,7 +28,8 @@ func main() {
         p      Person `json:"Person"`   // lowercase (struct, not JSON tag)
     }
 
-    per := Person{Fn: "RZ",
+    per := Person{
+        Fn: "RZ",
         Ln: "Feeser",
     }
 
