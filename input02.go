@@ -11,8 +11,10 @@ func main() {
     var age int                     // define an int var (for tracking user age)
 
     fmt.Print("Enter your name & age: ")            // "fmt.Print" is not followed by a /n
-    fmt.Scanf("%s %d", &name, &age)                 // "fmt.Scanf" function reads a string and an integer to the two provided variables
+    a,b := fmt.Scanf("%s %d", &name, &age)                 // "fmt.Scanf" function reads a string and an integer to the two provided variables
     fmt.Printf("%s is %d years old\n", name, age)   // "fmt.Printf" allows us to "format" text
-                                                    //    push our captured data to standard out using "formatters"
+    fmt.Println(a)
+    fmt.Println(b)
+    //    push our captured data to standard out using "formatters"
 }
 
